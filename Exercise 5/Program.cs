@@ -14,8 +14,15 @@ namespace Exercise_5
             public Node Next;
             public Node(string value)
             {
-
+                Value = value;
             }
+        }
+        bool Empty()
+        {
+            if(danila == null)
+                return (true);
+            else
+                return (false);
         }
     }
 
