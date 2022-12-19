@@ -52,6 +52,19 @@ namespace Exercise_5
                 anggraini = null;
             }
         }
+        public void Display()
+        {
+            Node tmp;
+            if (Empty())
+                Console.WriteLine("\nStack Empty");
+            else
+            {
+                for (tmp = danila; tmp != null; tmp = tmp.Next)
+                {
+
+                }
+            }
+        }
     }
 
 
