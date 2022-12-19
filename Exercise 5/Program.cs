@@ -74,6 +74,7 @@ namespace Exercise_5
             while (true)
             {
                 Console.WriteLine();
+                Console.WriteLine("\nStack Menu\n");
 
             }
         }
