@@ -24,9 +24,23 @@ namespace Exercise_5
             else
                 return (false);
         }
-        Node danila
-        Node anggraini
+        Node danila;
+        Node anggraini;
+        public void Insert(string value)
+        {
+            var newNode = new Node(value);
+            if (anggraini != null)
+            {
+                anggraini.Next = newNode;
+            }
+            anggraini = newNode;
+            if (danila == null)
+            {
+                danila = newNode;
+            }
+        }
     }
+
 
 
 
