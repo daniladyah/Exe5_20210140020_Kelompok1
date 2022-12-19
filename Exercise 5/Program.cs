@@ -78,6 +78,30 @@ namespace Exercise_5
                 Console.WriteLine("1.Insert ");
                 Console.WriteLine("2.Delete ");
                 Console.WriteLine("3.Display ");
+                Console.WriteLine("4.Exit");
+                Console.WriteLine("\nEnter your choice: ");
+                string Input = Console.ReadLine();
+                char ch = Convert.ToChar(Input == "" ? "0" : Input);
+                switch (ch)
+                {
+                    case '1':
+                        Console.Write("\nEnter a alfabeth :");
+                        string num = Convert.ToString(Console.ReadLine());
+                        q.Insert(num);
+                        break;
+                    case '2':
+                        q.Delete();
+                        Console.WriteLine("item delete");
+                        break;
+                    case '3':
+                        q.Display();
+                        break;
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\nInvalid choice");
+                        break;
+                }
 
             }
         }
