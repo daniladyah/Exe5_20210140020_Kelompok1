@@ -39,6 +39,19 @@ namespace Exercise_5
                 danila = newNode;
             }
         }
+        public void Delete()
+        {
+            if (danila == null)
+            {
+                throw new InvalidOperationException("The queue is empty");
+            }
+            var value = danila.Value;
+            danila = danila.Next;
+            if (danila == null)
+            {
+                anggraini = null;
+            }
+        }
     }
 
 
