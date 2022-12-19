@@ -61,27 +61,21 @@ namespace Exercise_5
             {
                 for (tmp = danila; tmp != null; tmp = tmp.Next)
                 {
-
+                    Console.WriteLine(tmp.Value);
                 }
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
+            QueueLinkList q = new QueueLinkList();  
+            while (true)
+            {
+                Console.WriteLine();
+
+            }
         }
     }
 }
