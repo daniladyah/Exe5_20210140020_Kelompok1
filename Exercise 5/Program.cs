@@ -76,6 +76,8 @@ namespace Exercise_5
                 Console.WriteLine();
                 Console.WriteLine("\nStack Menu\n");
                 Console.WriteLine("1.Insert ");
+                Console.WriteLine("2.Delete ");
+
             }
         }
     }
